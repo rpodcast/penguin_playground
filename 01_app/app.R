@@ -6,7 +6,6 @@
 #' app anti-aims
 #'  - reactivity
 #'  - tidyeval
-
 #'  
 
 # set up ----
@@ -15,16 +14,17 @@ library(palmerpenguins)
 library(ggplot2)
 library(DT)
 
+# ui ----
 ui <- fluidPage(
   titlePanel("Penguin Playground 001"),
-  dataTableOutput(outputId = "penguin_table"),
+  DTOutput(outputId = "penguin_table"),
   plotOutput(outputId = "bar_graph"),
   plotOutput(outputId = "scatterplot")
 )
 
-
+# server ----
 server <- function(input, output, session) {
-  output$penguin_table <- renderDataTable(penguins)
+  output$penguin_table <- renderDT(penguins)
   
   output$bar_graph <- renderPlot(ggplot(penguins,
                                         aes(x = island, fill = species)) +
@@ -36,4 +36,5 @@ server <- function(input, output, session) {
                                                     shape = species)))
 }
 
+# run app ----
 shinyApp(ui, server)
