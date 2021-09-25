@@ -1,0 +1,45 @@
+---
+title: "TODO"
+author: "Jesse Mostipak"
+date: "9/25/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### TODO
+
+**Basic app**
+
+- ~~make point size reactive~~
+- ~~make alpha reactive (use slider)~~
+- ~~filter by species~~
+- add ability to change the plot title
+- add button to write data table to .csv
+- add hex sticker
+- ~~add better color theme to graph~~
+- ??? clean up legend and axis titles
+- ??? add vertical padding to app
+
+**Full app**
+
+- update data table based on click and brush
+- add tabs
+  + summary stats
+  + graphs (multiple, change based on selection?)
+  + raw data table
+  + references//learn about the data + penguins
+- custom theming
+  + `{bslib}`
+  + `{thematic}`
+  + `{gt}`
+
+**Messing around**
+
+- Penguin MySpace-ish
+- Penguin animations
+  + `{gganimate}`?
+- Select and display a random penguin image 
+
