@@ -21,16 +21,16 @@ ui <- fluidPage(
       
       # select x-axis value for scatterplot ----
       selectizeInput(inputId = "x_axis",
-                  label = "Select a value for the x-axis: ",
-                  choices = c(
-                    "",
-                    "Bill length (in mm)" = "bill_length_mm",
-                    "Bill depth (in mm)" = "bill_depth_mm",
-                    "Flipper length (in mm)" = "flipper_length_mm",
-                    "Body mass (in g)" = "body_mass_g",
-                    "Year" = "year"
-                  ),
-                  selected = "bill_length_mm"),
+                     label = "Select a value for the x-axis: ",
+                     choices = c(
+                       "",
+                       "Bill length (in mm)" = "bill_length_mm",
+                       "Bill depth (in mm)" = "bill_depth_mm",
+                       "Flipper length (in mm)" = "flipper_length_mm",
+                       "Body mass (in g)" = "body_mass_g",
+                       "Year" = "year"
+                     ),
+                     selected = "bill_length_mm"),
       
       # select y-axis value for scatterplot ----
       selectizeInput(inputId = "y_axis",
@@ -123,7 +123,7 @@ server <- function(input, output, session) {
   title_case_plot <- reactive({
     tags$h3(toTitleCase(input$plot_title))
   })
-
+  
   # summary text ----
   output$summary_text <- renderUI({
     tags$h4("You're viewing data for ", nrow(filtered_penguins()), 
@@ -154,9 +154,9 @@ server <- function(input, output, session) {
   })
   
   # datatable (server) ----
-
+  
   output$penguin_datatable <- renderDT({
-        if(input$show_table){
+    if(input$show_table){
       DT::datatable(filtered_penguins(),
                     options = list(pageLength = 10))
     }
