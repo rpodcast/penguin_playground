@@ -25,7 +25,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **Full app**
 
-- update data table based on click and brush
+- update data table based on click and brush (linked filtering)
 - option for regression lines?
 - integrate `isolate()`, `eventReactive()`, and `observeEvent()`
 - add tabs
