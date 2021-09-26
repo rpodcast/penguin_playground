@@ -116,7 +116,7 @@ server <- function(input, output, session) {
   
   # reactive function for penguin species ----
   filtered_penguins <- reactive({
-    penguins %>% filter(species == input$penguin_species)
+    penguins %>% filter(species %in% input$penguin_species)
   })
   
   # # reactive function for plot title ----

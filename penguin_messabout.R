@@ -20,3 +20,4 @@ ggplot(penguins,
            size = input$point_size)) +
   geom_point(aes(color = .data[[input$scatterplot_color]])) +
   theme_bw()
+
