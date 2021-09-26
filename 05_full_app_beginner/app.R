@@ -1,6 +1,7 @@
 # set up ----
 library(shiny)
 library(stringr)
+library(dplyr)
 library(ggplot2)
 library(readr)
 library(DT)

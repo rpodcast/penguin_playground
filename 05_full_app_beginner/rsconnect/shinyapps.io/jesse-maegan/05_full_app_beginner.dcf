@@ -1,0 +1,14 @@
+name: 05_full_app_beginner
+title: 05_full_app_beginner
+username:
+account: jesse-maegan
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4735188
+bundleId: 5073852
+url: https://jesse-maegan.shinyapps.io/05_full_app_beginner/
+when: 1632670754.59594
+lastSyncTime: 1632670754.59594
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: TODO.html|TODO.Rmd
