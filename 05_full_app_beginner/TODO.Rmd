@@ -16,18 +16,16 @@ knitr::opts_chunk$set(echo = TRUE)
 - ~~make point size reactive~~
 - ~~make alpha reactive (use slider)~~
 - ~~filter by species~~
-- ~~add ability to add and change the plot title~~
-- ~~fix .csv download button~~ 
-- ~~add hex sticker~~
+- add ability to change the plot title
+- add button to write data table to .csv
+- add hex sticker
 - ~~add better color theme to graph~~
-- ~~clean up axis titles~~
-- ~~add vertical padding to app~~
+- ??? clean up legend and axis titles
+- ??? add vertical padding to app
 
 **Full app**
 
 - update data table based on click and brush
-- option for regression lines?
-- integrate `isolate()`, `eventReactive()`, and `observeEvent()`
 - add tabs
   + summary stats
   + graphs (multiple, change based on selection?)
